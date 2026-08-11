@@ -16,8 +16,8 @@ import { AuthService } from '../../core/services/auth.service';
         <div class="showcase-glow"></div>
         <div class="showcase-content">
           <div class="brand-badge">
-            <span class="material-icons-outlined">flight_takeoff</span>
-            <span>Wanderlust Enterprise</span>
+            <img src="assets/logo.png" alt="Tripnest" style="width: 20px; height: 20px; border-radius: 4px;" />
+            <span>Tripnest Enterprise</span>
           </div>
 
           <h1 class="showcase-heading">
@@ -56,7 +56,7 @@ import { AuthService } from '../../core/services/auth.service';
 
           <!-- Bottom Quote Ticker -->
           <div class="showcase-footer">
-            <p>“Wanderlust transformed our corporate travel with zero hassle.”</p>
+            <p>“Tripnest transformed our corporate travel with zero hassle.”</p>
             <span class="author">— Executive Travel Desk</span>
           </div>
         </div>
@@ -113,7 +113,7 @@ import { AuthService } from '../../core/services/auth.service';
                   type="email" 
                   [(ngModel)]="email" 
                   name="email" 
-                  placeholder="admin@wanderlust.com" 
+                  placeholder="admin@tripnest.com" 
                   required 
                 />
               </div>
@@ -196,13 +196,13 @@ import { AuthService } from '../../core/services/auth.service';
           <div class="quick-accounts">
             <p class="quick-title">Quick Demo Login:</p>
             <div class="chip-buttons">
-              <button type="button" (click)="autofill('admin@wanderlust.com', 'Admin@123')">
+              <button type="button" (click)="autofill('admin@tripnest.com', 'Admin@123')">
                 <span class="dot admin"></span> Admin
               </button>
-              <button type="button" (click)="autofill('vendor@wanderlust.com', 'Admin@123')">
+              <button type="button" (click)="autofill('vendor@tripnest.com', 'Admin@123')">
                 <span class="dot vendor"></span> Vendor
               </button>
-              <button type="button" (click)="autofill('customer@wanderlust.com', 'Admin@123')">
+              <button type="button" (click)="autofill('customer@tripnest.com', 'Admin@123')">
                 <span class="dot customer"></span> Customer
               </button>
             </div>

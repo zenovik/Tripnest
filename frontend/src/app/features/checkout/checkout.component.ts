@@ -18,9 +18,9 @@ import { AuthService } from '../../core/services/auth.service';
         <div class="printable-ticket glass-card" id="e-ticket">
           <div class="ticket-header flex-between">
             <div class="brand">
-              <span class="material-icons-outlined logo">flight_takeoff</span>
+              <img src="assets/logo.png" alt="Tripnest" style="width: 32px; height: 32px; border-radius: 6px;" />
               <div>
-                <h2>Wanderlust Pass</h2>
+                <h2>Tripnest Pass</h2>
                 <small>Official Booking Confirmation & Invoice</small>
               </div>
             </div>
@@ -188,7 +188,7 @@ import { AuthService } from '../../core/services/auth.service';
           <div class="coupon-box">
             <label>Have a Promo Coupon?</label>
             <div class="coupon-input">
-              <input type="text" [(ngModel)]="couponCode" placeholder="e.g. WANDERLUST500" />
+              <input type="text" [(ngModel)]="couponCode" placeholder="e.g. TRIPNEST500" />
               <button (click)="applyCoupon()">Apply</button>
             </div>
             <small *ngIf="couponApplied" class="coupon-success">✓ Coupon Applied (-₹{{ discountAmount }})</small>
@@ -384,12 +384,13 @@ export class CheckoutComponent implements OnInit {
   }
 
   applyCoupon() {
-    if (this.couponCode.toUpperCase() === 'WANDERLUST500') {
+    const code = this.couponCode.toUpperCase();
+    if (code === 'TRIPNEST500' || code === 'WANDERLUST500') {
       this.discountAmount = 500;
       this.couponApplied = true;
       this.recalculateTotals();
     } else {
-      alert('Invalid Promo Coupon Code. Try WANDERLUST500');
+      alert('Invalid Promo Coupon Code. Try TRIPNEST500');
     }
   }
 

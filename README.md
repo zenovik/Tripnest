@@ -1,6 +1,6 @@
-# ✈️ Wanderlust - Enterprise Travel & Hospitality Platform
+# ✈️ Tripnest - Enterprise Travel & Hospitality Platform
 
-Wanderlust is a high-performance, modular, enterprise-grade Travel & Hospitality platform built with **Angular 20+** on the frontend and **NestJS & PostgreSQL (Prisma ORM)** on the backend.
+Tripnest is a high-performance, modular, enterprise-grade Travel & Hospitality platform built with **Angular 20+** on the frontend and **NestJS & PostgreSQL** on the backend.
 
 ---
 

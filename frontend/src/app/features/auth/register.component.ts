@@ -16,8 +16,8 @@ import { AuthService } from '../../core/services/auth.service';
         <div class="showcase-glow"></div>
         <div class="showcase-content">
           <div class="brand-badge">
-            <span class="material-icons-outlined">card_travel</span>
-            <span>Join Wanderlust Privileges</span>
+            <img src="assets/logo.png" alt="Tripnest" style="width: 20px; height: 20px; border-radius: 4px;" />
+            <span>Join Tripnest Privileges</span>
           </div>
 
           <h1 class="showcase-heading">
@@ -57,7 +57,7 @@ import { AuthService } from '../../core/services/auth.service';
           <!-- Showcase Footer -->
           <div class="showcase-footer">
             <p>“Signing up took 30 seconds. The hotel discount code worked instantly!”</p>
-            <span class="author">— Verified Wanderlust Member</span>
+            <span class="author">— Verified Tripnest Member</span>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@ import { AuthService } from '../../core/services/auth.service';
               <span class="material-icons-outlined check-icon">check_circle</span>
             </div>
             <h2>Account Created!</h2>
-            <p>Welcome to Wanderlust, {{ registeredName }}!</p>
+            <p>Welcome to Tripnest, {{ registeredName }}!</p>
             <div class="loading-bar"></div>
           </div>
           

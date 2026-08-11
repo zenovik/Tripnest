@@ -80,12 +80,12 @@ import { ApiService } from '../../../core/services/api.service';
 export class AdminSettingsComponent implements OnInit {
   apiService = inject(ApiService);
   settings: any = {
-    siteName: 'Wanderlust Enterprise',
-    supportEmail: 'support@wanderlust.com',
-    contactPhone: '+1 (800) 555-WANDER',
+    siteName: 'Tripnest Enterprise',
+    supportEmail: 'support@tripnest.com',
+    contactPhone: '+91 (800) 555-TRIP',
     stripeEnabled: true,
     razorpayEnabled: true,
-    smtpHost: 'smtp.wanderlust.com',
+    smtpHost: 'smtp.tripnest.com',
     smtpPort: 587,
   };
 

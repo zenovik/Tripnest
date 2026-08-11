@@ -78,14 +78,14 @@ export class AuthService {
     this.currentUser.set(user);
     localStorage.setItem('wl_user', JSON.stringify(user));
     localStorage.setItem('wl_token', token);
-    localStorage.setItem('wanderlust_token', token);
+    localStorage.setItem('tripnest_token', token);
   }
 
   logout() {
     this.currentUser.set(null);
     localStorage.removeItem('wl_user');
     localStorage.removeItem('wl_token');
-    localStorage.removeItem('wanderlust_token');
+    localStorage.removeItem('tripnest_token');
     this.router.navigate(['/login']);
   }
 }

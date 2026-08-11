@@ -32,9 +32,9 @@ export type AdminTab =
         <div class="sidebar-header flex-between">
           <a routerLink="/" class="brand-box">
             <div class="logo-icon">
-              <span class="material-icons-outlined">flight_takeoff</span>
+              <img src="assets/logo.png" alt="Tripnest" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
             </div>
-            <span *ngIf="!isSidebarCollapsed" class="brand-text">Wanderlust <small>SaaS Admin</small></span>
+            <span *ngIf="!isSidebarCollapsed" class="brand-text">Tripnest <small>SaaS Admin</small></span>
           </a>
           <button class="toggle-btn" (click)="isSidebarCollapsed = !isSidebarCollapsed">
             <span class="material-icons-outlined">{{ isSidebarCollapsed ? 'chevron_right' : 'chevron_left' }}</span>

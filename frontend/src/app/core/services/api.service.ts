@@ -39,13 +39,13 @@ export class ApiService {
     }
     // Auto-login as Admin to get real JWT token for local dev
     return this.http.post<any>(`${this.apiUrl}/auth/login`, {
-      email: 'admin@wanderlust.com',
+      email: 'admin@tripnest.com',
       password: 'Admin@123'
     }).pipe(
       map(res => {
         const jwt = res.accessToken;
         localStorage.setItem('wl_token', jwt);
-        localStorage.setItem('wanderlust_token', jwt);
+        localStorage.setItem('tripnest_token', jwt);
         return jwt;
       }),
       catchError(err => {
@@ -237,9 +237,9 @@ export class ApiService {
         return this.http.get<any[]>(`${this.apiUrl}/admin/users`, { headers });
       }),
       catchError(() => of([
-        { id: 'u1', fullName: 'Alex Vance (Admin)', email: 'admin@wanderlust.com', role: { name: 'ADMIN' }, isActive: true, createdAt: '2026-01-15' },
-        { id: 'u2', fullName: 'Sophia Martinez', email: 'customer@wanderlust.com', role: { name: 'CUSTOMER' }, isActive: true, createdAt: '2026-03-20' },
-        { id: 'u3', fullName: 'Royal Hospitality Group', email: 'vendor@wanderlust.com', role: { name: 'VENDOR' }, isActive: true, createdAt: '2026-02-10' },
+        { id: 'u1', fullName: 'Alex Vance (Admin)', email: 'admin@tripnest.com', role: { name: 'ADMIN' }, isActive: true, createdAt: '2026-01-15' },
+        { id: 'u2', fullName: 'Sophia Martinez', email: 'customer@tripnest.com', role: { name: 'CUSTOMER' }, isActive: true, createdAt: '2026-03-20' },
+        { id: 'u3', fullName: 'Royal Hospitality Group', email: 'vendor@tripnest.com', role: { name: 'VENDOR' }, isActive: true, createdAt: '2026-02-10' },
       ]))
     );
   }
@@ -323,7 +323,7 @@ export class ApiService {
         return this.http.get<any[]>(`${this.apiUrl}/admin/logs`, { headers });
       }),
       catchError(() => of([
-        { id: '1', action: 'USER_LOGIN', user: 'admin@wanderlust.com', ip: '127.0.0.1', timestamp: new Date() }
+        { id: '1', action: 'USER_LOGIN', user: 'admin@tripnest.com', ip: '127.0.0.1', timestamp: new Date() }
       ]))
     );
   }
@@ -335,12 +335,12 @@ export class ApiService {
         return this.http.get(`${this.apiUrl}/admin/settings`, { headers });
       }),
       catchError(() => of({
-        siteName: 'Wanderlust Enterprise',
-        supportEmail: 'support@wanderlust.com',
-        contactPhone: '+91 (800) 555-WANDER',
+        siteName: 'Tripnest Enterprise',
+        supportEmail: 'support@tripnest.com',
+        contactPhone: '+91 (800) 555-TRIP',
         stripeEnabled: true,
         razorpayEnabled: true,
-        smtpHost: 'smtp.wanderlust.com',
+        smtpHost: 'smtp.tripnest.com',
         smtpPort: 587
       }))
     );

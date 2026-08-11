@@ -15,11 +15,11 @@ import { ThemeService } from '../../../core/services/theme.service';
         <!-- Brand Logo -->
         <a routerLink="/" class="brand-logo">
           <div class="logo-icon">
-            <span class="material-icons-outlined">flight_takeoff</span>
+            <img src="assets/logo.png" alt="Tripnest" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;" />
           </div>
           <div class="logo-text">
-            <span class="brand-name">Wanderlust</span>
-            <span class="brand-tag">Travel & Hospitality</span>
+            <span class="brand-name">Tripnest</span>
+            <span class="brand-tag">Travel & Stays</span>
           </div>
         </a>
 

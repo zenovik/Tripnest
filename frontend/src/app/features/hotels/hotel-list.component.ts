@@ -172,7 +172,7 @@ import { Hotel } from '../../core/models/platform.models';
               </div>
               <div class="input-field">
                 <label>Promo Coupon Code</label>
-                <input type="text" [(ngModel)]="couponCode" placeholder="e.g. WANDERLUST20" />
+                <input type="text" [(ngModel)]="couponCode" placeholder="e.g. TRIPNEST20" />
               </div>
             </div>
 

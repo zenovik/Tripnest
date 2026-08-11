@@ -163,8 +163,8 @@ import { Hotel, CabService } from '../../core/models/platform.models';
       <footer class="footer">
         <div class="container footer-content flex-between">
           <div>
-            <h3 class="brand-name">Wanderlust Platform</h3>
-            <p>&copy; 2026 Wanderlust Travel Inc. All rights reserved.</p>
+            <h3 class="brand-name">Tripnest Platform</h3>
+            <p>&copy; 2026 Tripnest Travel Inc. All rights reserved.</p>
           </div>
           <div class="footer-links">
             <a routerLink="/hotels">Hotels</a>
